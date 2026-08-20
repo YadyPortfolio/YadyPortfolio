@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y4DY — Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Y4DY</div>
+        
+    </header>
+
+    <main>
+
+        <!-- PORTADA -->
+        <section class="hero">
+            <img src="images/portada.jpg" alt="Fotografía de Y4DY">
+
+            <div class="hero-text">
+                <p>FOTOGRAFO</p>
+                <p>MONTEVIDEO, URUGUAY</p>
+            </div>
+
+            <div class="scroll">
+                SCROLL ↓
+            </div>
+        </section>
+
+
+        <!-- FRASE -->
+<section class="intro">
+
+    
+
+    <h1>
+        LO QUE<br>
+        VIVIMOS.
+    </h1>
+
+
+</section>
+
+
+        <!-- TRABAJOS -->
+        <section class="work">
+
+    <div class="section-title">
+        <p></p>
+    </div>
+
+    <div class="gallery">
+
+        <img src="images/foto2.jpg" class="horizontal">
+
+        <img src="images/3.jpg" class="vertical">
+
+        <img src="images/foto3.jpg" class="vertical">
+
+<img src="images/foto4.jpg" class="horizontal">
+<img src="images/foto5.jpg" class="vertical">
+<img src="images/foto6.jpg" class="vertical">
+
+<img src="images/7.jpg" class="horizontal">
+<img src="images/8.jpg" class="horizontal">
+<img src="images/9.jpg" class="horizontal">
+
+<img src="images/port_10.jpg" class="horizontal">
+<img src="images/port_11.jpg" class="horizontal">
+<img src="images/port_12.jpg" class="horizontal">
+
+<img src="images/port_13.jpg" class="horizontal">
+<img src="images/port_14.jpg" class="horizontal">
+<img src="images/port_15.jpg" class="horizontal">
+
+<img src="images/port_16.jpg" class="horizontal">
+<img src="images/port_17.jpg" class="horizontal">
+<img src="images/port_18.jpg" class="horizontal">
+
+<img src="images/port_19.jpg" class="horizontal">
+<img src="images/14.jpg" class="vertical">
+<img src="images/16.jpg" class="vertical">
+
+<img src="images/port_21.jpg" class="horizontal">
+<img src="images/21.jpg" class="vertical">
+<img src="images/20.jpg" class="vertical">
+
+
+<img src="images/port_23.jpg" class="horizontal">
+<img src="images/port_24.jpg" class="horizontal">
+<img src="images/port_25.jpg" class="horizontal">
+
+
+
+<img src="images/port_26.jpg" class="horizontal">
+<img src="images/port_27.jpg" class="horizontal">
+<img src="images/port_28.jpg" class="horizontal">
+
+<img src="images/port_29.jpg" class="horizontal">
+<img src="images/port_30.jpg" class="horizontal">
+
+
+    </div>
+<!-- CONTACTO -->
+        <section class="contact">
+
+            <p>Tenes un projecto en mente?</p>
+
+            <h2>ESCRIBIME!</h2>
+
+            <div class="links">
+                <a href="https://www.instagram.com/y4dy404/">INSTAGRAM →</a>
+                <a href="https://wa.me/59898020227">WHATSAPP →</a>
+                <a href="mailto:juanignacioyady@gmail.com">EMAIL →</a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        Y4DY FOTOGRAFO — MONTEVIDEO, URUGUAY
+    </footer>
+
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #f2f2f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 60px;
+
+    z-index: 10;
+
+    mix-blend-mode: difference;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu {
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 100vh;
+    min-height: 650px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0.72;
+
+    transition: transform 1s ease;
+}
+
+.hero:hover img {
+    transform: scale(1.02);
+}
+
+.hero-text {
+    position: absolute;
+
+    left: 40px;
+    bottom: 45px;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.scroll {
+    position: absolute;
+
+    right: 40px;
+    bottom: 45px;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    min-height: 100vh;
+
+    padding: 140px 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.intro p {
+    font-size: 16px;
+    letter-spacing: 3px;
+
+    color: #aaa;
+
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: clamp(70px, 10vw, 150px);
+
+    line-height: 0.85;
+
+    font-weight: 500;
+
+    letter-spacing: -5px;
+
+    margin-bottom: 70px;
+}
+
+.intro-photo {
+    width: 500px;
+    max-width: 70%;
+
+    height: 650px;
+
+    object-fit: cover;
+
+    margin-left: 20%;
+}
+/* =========================
+   WORK
+========================= */
+
+.work {
+    padding: 120px 40px;
+}
+
+.section-title {
+    max-width: 1400px;
+
+    margin: 0 auto 80px;
+}
+
+.section-title p {
+    font-size: 16px;
+    letter-spacing: 3px;
+
+    color: #aaa;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.gallery {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+}
+
+.gallery img {
+    width: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+
+    cursor: pointer;
+}
+
+
+/* FOTO HORIZONTAL */
+
+.gallery img.horizontal {
+    grid-column: 1 / -1;
+
+    aspect-ratio: 16 / 9;
+}
+
+
+/* FOTO VERTICAL */
+
+.gallery img.vertical {
+    aspect-ratio: 3 / 4;
+}
+
+
+.gallery img:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   IMÁGENES GRANDES
+========================= */
+
+/* Primera foto */
+.gallery img:first-child {
+    grid-column: 1 / -1;
+
+    width: 85%;
+
+    max-height: 800px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    min-height: 75vh;
+
+    padding: 160px 10%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+.about p:first-child {
+    font-size: 16px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 35px;
+
+    color: #aaa;
+}
+
+.about h2 {
+    font-size: clamp(55px, 7vw, 100px);
+
+    font-weight: 400;
+
+    letter-spacing: -3px;
+}
+
+.about-text {
+    max-width: 500px;
+
+    color: #999;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    min-height: 80vh;
+
+    padding: 160px 10%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.contact p {
+    font-size: 16px;
+
+    letter-spacing: 3px;
+
+    color: #aaa;
+}
+
+.contact h2 {
+    font-size: clamp(65px, 10vw, 150px);
+
+    font-weight: 400;
+
+    letter-spacing: -4px;
+
+    margin: 35px 0 90px;
+}
+
+.links {
+    display: flex;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.links a {
+    color: #f2f2f0;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+
+    transition: opacity 0.3s ease;
+}
+
+.links a:hover {
+    opacity: 0.5;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 35px 40px;
+
+    border-top: 1px solid #222;
+
+    color: #777;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .menu {
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-text {
+        left: 20px;
+        bottom: 25px;
+
+        font-size: 13px;
+    }
+
+    .scroll {
+        right: 20px;
+        bottom: 25px;
+
+        font-size: 12px;
+    }
+
+
+    /* INTRO */
+
+.intro {
+    padding: 100px 20px;
+}
+
+.intro h1 {
+    font-size: 65px;
+    margin-bottom: -60px;
+}
+
+.intro-image {
+    width: 85%;
+    max-width: none;
+    margin-left: 10%;
+}
+
+
+    /* WORK */
+
+    .work {
+        padding: 90px 20px;
+    }
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    .section-title p {
+        font-size: 13px;
+    }
+
+
+    /* GALERÍA */
+
+    .gallery {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .gallery img {
+        max-height: none;
+    }
+
+    .gallery img:first-child {
+        grid-column: auto;
+
+        width: 100%;
+
+        max-height: none;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        min-height: auto;
+
+        padding: 110px 20px;
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .about p:first-child {
+        font-size: 13px;
+    }
+
+    .about h2 {
+        font-size: 60px;
+
+        letter-spacing: -2px;
+    }
+
+    .about-text {
+        font-size: 17px;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        min-height: 70vh;
+
+        padding: 110px 20px;
+    }
+
+    .contact p {
+        font-size: 13px;
+    }
+
+    .contact h2 {
+        font-size: clamp(55px, 14vw, 90px);
+
+        letter-spacing: -3px;
+
+        margin: 30px 0 60px;
+    }
+
+    .links {
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .links a {
+        font-size: 14px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 25px 20px;
+
+        font-size: 10px;
+    }
+}
